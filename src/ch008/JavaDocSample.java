@@ -1,5 +1,5 @@
 /**
- * 本程序演示用于演示JavaDoc的使用
+ * 演示JavaDoc标记的使用
  *
  */
 package ch008;
