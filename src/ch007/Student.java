@@ -1,7 +1,7 @@
 package ch007;
 
 /**
- * 演示Java的三种注释
+ * 演示Java的三种注释 
  * 
  * @author 程序猿大头
  *
