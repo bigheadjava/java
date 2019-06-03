@@ -1,7 +1,7 @@
 package ch003;
 
 /**
- * 第一个Java程序
+ * 第一个Java程序 
  * @author 程序猿大头
  *
  */
