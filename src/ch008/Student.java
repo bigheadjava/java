@@ -1,7 +1,7 @@
 package ch008;
 
 /**
- * 演示JavaDoc注释
+ * 演示JavaDoc注释 
  * 
  * @author 程序猿大头
  *
