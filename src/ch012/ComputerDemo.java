@@ -1,7 +1,7 @@
 package ch012;
 
 /**
- * 演示对ch012.Computer类中的方法的调用
+ * 演示对ch012.Computer类中的方法的调用 
  * 
  * @author 程序猿大头
  *
