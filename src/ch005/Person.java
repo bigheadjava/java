@@ -7,7 +7,7 @@ package ch005;
  *
  */
 public class Person { // 声明一个Person类
-	private String name; // 人的名字属性
+	private String name; // 人的名字属性 
 	private int age; // 人的年龄属性
 	private double height; // 人的身高属性
 	private double weight; // 人的体重属性
