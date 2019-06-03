@@ -57,4 +57,13 @@ public class Computer {
 	public void setModel(String model) {
 		this.model = model;
 	}
+
+	/**
+	 * 普通方法，用来获取电脑型号
+	 * 
+	 * @return
+	 */
+	public String getModel() {
+		return this.model;
+	}
 }
