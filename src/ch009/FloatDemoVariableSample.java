@@ -1,7 +1,7 @@
 package ch009;
 
 /**
- * 演示float和double类型的变量声明
+ * 演示float和double类型的变量声明 
  * 
  * @author 程序猿大头
  *
