@@ -3,7 +3,7 @@ package ch015;
 import ch014.StaticVar;
 
 /**
- * 用于演示成员变量的默认值
+ * 用于演示成员变量的默认值 
  * 
  * @author 程序猿大头
  *
