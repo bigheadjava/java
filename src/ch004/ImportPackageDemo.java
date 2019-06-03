@@ -3,7 +3,7 @@ package ch004;
 import java.util.Calendar;
 
 /**
- * 演示一个类同时引用了两个来自于不同包的同名类
+ * 演示一个类同时引用了两个来自于不同包的同名类 
  * 
  * @author 程序猿大头
  *
