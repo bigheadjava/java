@@ -1,4 +1,4 @@
-package ch027.constructor;
+package ch028;
 
 /**
  * 演示创建子类对象的时候会调用父类构造方法
