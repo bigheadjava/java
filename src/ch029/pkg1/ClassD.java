@@ -5,7 +5,7 @@ import ch029.pkg2.ClassA;
 /**
  * 演示Java的控制访问级别
  * 
- * @author 程序猿大头
+ * @author 程序猿大头 
  *
  */
 public class ClassD {

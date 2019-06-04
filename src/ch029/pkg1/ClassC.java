@@ -5,7 +5,7 @@ import ch029.pkg2.ClassA;
 /**
  * 演示Java的控制访问级别
  * 
- * @author 程序猿大头
+ * @author 程序猿大头 
  *
  */
 public class ClassC extends ClassA { // ClassC继承了ClassA的public_var和protected_var
