@@ -4,7 +4,7 @@ package ch020;
  * 演示while循环用法
  * 打印出0-100之间的整数
  * 
- * @author yinchu
+ * @author 程序猿大头
  *
  */
 public class WhileLoopDemo {
