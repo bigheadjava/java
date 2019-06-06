@@ -28,7 +28,7 @@ public class ShallowCloneDemo {
 			System.out.println("打印s_2对象属性：" + s_2.toString());
 			
 			System.out.println("测试s_1和s_2属性name是不是同一个对象：" + (s_1.getName() == s_2.getName()));
-			System.out.println("测试s_1和s_2属性classes是不是同一个对象：" + (s_1.getClass() == s_2.getClass()));
+			System.out.println("测试s_1和s_2属性classes是不是同一个对象：" + (s_1.getClasses() == s_2.getClasses()));
 		} catch (CloneNotSupportedException e) {
 			e.printStackTrace();
 		}
