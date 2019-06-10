@@ -1,5 +1,7 @@
 package ch045.reference.soft;
 
+import java.lang.ref.Reference;
+import java.lang.ref.ReferenceQueue;
 import java.lang.ref.SoftReference;
 
 /**
@@ -11,15 +13,16 @@ import java.lang.ref.SoftReference;
 public class SoftReferenceDemo {
 
 	public static void main(String[] args) {
-		Class1 c1 = new Class1();
-		SoftReference<Class1> sr = new SoftReference<Class1>(c1);
-		c1 = null;
-		if (sr != null) {
-			c1 = sr.get();
-		} else {
-			c1 = new Class1();
-			sr = new SoftReference<Class1>(c1);
-		}
+		ReferenceQueue<String> referenceQueue = new ReferenceQueue<>();
+		String str = new String("Java");
+		SoftReference<String> softReference = new SoftReference<>(str, referenceQueue);
+		str = null; //
+		System.gc(); // 通知JVM来进行垃圾回收，回收刚刚的new ReferenceQueue<>()
+
+		System.out.println(softReference.get()); // Java
+
+		Reference<? extends String> reference = referenceQueue.poll();
+		System.out.println(reference); // null，new ReferenceQueue<>()没有被回收
 	}
 
 }
