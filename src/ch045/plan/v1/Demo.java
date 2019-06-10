@@ -1,4 +1,4 @@
-package ch045.un_change.plan.v1;
+package ch045.plan.v1;
 
 import java.util.Calendar;
 import java.util.Date;
