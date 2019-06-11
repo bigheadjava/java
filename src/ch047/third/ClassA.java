@@ -28,7 +28,7 @@ public class ClassA {
 		int a4 = b.b2; // 合法，可以通过内部类ClassB的实例去访问变量b2
 
 		ClassB.ClassC c2 = b.new ClassC(); // 合法，可以通过内部类ClassB的实例去访问ClassB的内部类ClassC
-		ClassB.ClassC c3 = new ClassB().new ClassC(); // 合法，可以通过内部类ClassB的实例去访问ClassB的内部类ClassC
+		ClassB.ClassC c3 = new ClassB().new ClassC(); // 合法，可以通过内部类ClassB的实例去访问ClassB的内部类ClassC, new ClassB() 等价this.new ClassB()
 
 	}
 }
