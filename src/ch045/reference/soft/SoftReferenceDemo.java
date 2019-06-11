@@ -18,8 +18,8 @@ public class SoftReferenceDemo {
 		SoftReference<String> softReference = new SoftReference<>(str, referenceQueue);
 		str = null; //
 		System.gc(); // 通知JVM来进行垃圾回收，回收刚刚的new ReferenceQueue<>()
-
-		System.out.println(softReference.get()); // Java
+		
+		System.out.println(softReference.get()); // Java，假如new ReferenceQueue<>()被回收，softReference.get()返回null
 
 		Reference<? extends String> reference = referenceQueue.poll();
 		System.out.println(reference); // null，new ReferenceQueue<>()没有被回收
