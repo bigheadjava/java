@@ -8,7 +8,7 @@ package ch047.anonymous;
  */
 public class Sample {
 	private int a;
-
+	
 	public Sample() {
 		System.out.println("调用Sample类无参数构造方法...");
 	}
@@ -26,6 +26,7 @@ public class Sample {
 		new Sample().method();
 		Sample s = new Sample() {
 			public void method() {
+				{System.out.println("初始化匿名内部类...");}
 				System.out.println("调用匿名内部类的method方法...");
 			}
 		};
