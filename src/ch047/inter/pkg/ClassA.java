@@ -9,6 +9,7 @@ public class ClassA implements MyInterface {
 
 	@Override
 	public void print() {
+		InnerClass ic = new InnerClass();
 		System.out.println("ClassA实现了MyInterface...");
 	}
 	
