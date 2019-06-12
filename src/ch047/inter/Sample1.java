@@ -2,7 +2,7 @@ package ch047.inter;
 
 /**
  * 演示内部接口
- * @author yinchu
+ * @author 程序猿大头
  *
  */
 public class Sample1 {
