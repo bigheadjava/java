@@ -26,6 +26,10 @@ public class GenericMethodSample {
 		public <T> void method_2(T t) {
 			System.out.println("method_2: " + t.getClass().getName());
 		}
+		
+		public void method_3(T t) {
+			System.out.println("method_3: " + t.getClass().getName());
+		}
 	}
 	
 	public static void main(String[] args) {
@@ -36,5 +40,7 @@ public class GenericMethodSample {
 		ggc.method_2("Hello");
 		ggc.method_2(99.9);
 		ggc.method_2(true);
+		ggc.method_3("Java");
+		//ggc.method_3(12); 编译出错，因为因为泛型类型实参指定的是String，而传入的实参类是Integer
 	}
 }
