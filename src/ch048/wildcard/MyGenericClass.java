@@ -26,6 +26,12 @@ public class MyGenericClass<T> { // T可以随意写，比如K，M等；一般�
 		return key;
 	}
 	
+	/**
+	 * 普通方法，只不过使用了泛型通配符?，不是泛型方法
+     * ?是一种类型实参，可以看做为Number等所有类的父类
+     * 
+	 * @param mgc
+	 */
 	public void method(MyGenericClass<Number> mgc) {
 		System.out.println("key is " + mgc.getKey());
 	}
