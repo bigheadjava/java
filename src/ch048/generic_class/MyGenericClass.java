@@ -21,7 +21,7 @@ public class MyGenericClass<T> { // T可以随意写，比如K，M等；一般�
 	public MyGenericClass(T key) {
 		this.key = key;
 	}
-
+	
 	/**
 	 * 不是泛型方法，只是成员方法
 	 * getKey的返回值类型为T，T的类型由外部指定
