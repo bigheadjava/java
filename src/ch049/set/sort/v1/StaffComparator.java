@@ -1,9 +1,9 @@
-package ch049.set.sort;
+package ch049.set.sort.v1;
 
 import java.util.Comparator;
 
 /**
- * 演示定制化排序
+ * 演示定制化排序，开发比较器Comparator
  * 
  * @author 程序猿大头
  *
