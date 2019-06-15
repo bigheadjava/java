@@ -3,7 +3,7 @@ package ch050.dispatch;
 import java.io.IOException;
 
 /**
- * 演示线程的yield()方法
+ * 演示线程的yield()方法 
  * 
  * @author 程序猿大头
  *
