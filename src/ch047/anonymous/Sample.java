@@ -26,9 +26,9 @@ public class Sample {
 		new Sample().method();
 		Sample s = new Sample() {
 			public void method() {
-				{System.out.println("初始化匿名内部类...");}
 				System.out.println("调用匿名内部类的method方法...");
 			}
+			{System.out.println("初始化匿名内部类...");}
 		};
 		s.method();
 	}
