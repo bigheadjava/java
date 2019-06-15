@@ -1,4 +1,4 @@
-package ch050.status;
+package ch050.dispatch;
 
 import java.io.IOException;
 
@@ -9,6 +9,8 @@ import java.io.IOException;
  *
  */
 public class BlockSample extends Thread {
+	private static StringBuffer sb = new StringBuffer();
+	private static int count;
 
 	@Override
 	public void run() {
