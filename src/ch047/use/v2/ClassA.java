@@ -9,6 +9,10 @@ package ch047.use.v2;
 public class ClassA {
 
 	private int count;
+	
+	public ClassA( int count) {
+		this.count = count;
+	}
 
 	class ClassB {
 		public void reset() {
