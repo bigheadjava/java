@@ -14,7 +14,7 @@ public class MyTimer extends Thread {
 
 	@Override
 	public void run() {
-		Timer timer = new Timer(false);
+		Timer timer = new Timer("MyTimerTask");
 		TimerTask task = new TimerTask() {
 
 			@Override
@@ -22,7 +22,7 @@ public class MyTimer extends Thread {
 				if(i == 0) {
 					timer.cancel(); //倒计时到0为止，任务结束
 				}
-				System.out.println("正在执行倒计时: " + i--);
+				System.out.println(currentThread().getName() + "正在执行倒计时: " + i--);
 			}
 
 		};
