@@ -19,10 +19,10 @@ public class SoftReferenceDemo {
 		str = null; //
 		System.gc(); // 通知JVM来进行垃圾回收，回收刚刚的new ReferenceQueue<>()
 		
-		System.out.println(softReference.get()); // Java，假如new ReferenceQueue<>()被回收，softReference.get()返回null
+		System.out.println(softReference.get()); // Java，假如String对象被回收，softReference.get()返回null
 
 		Reference<? extends String> reference = referenceQueue.poll();
-		System.out.println(reference); // null，new ReferenceQueue<>()没有被回收
+		System.out.println(reference); // null，String对象没有被回收
 	}
 
 }
