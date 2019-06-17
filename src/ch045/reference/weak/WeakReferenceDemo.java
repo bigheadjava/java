@@ -17,9 +17,9 @@ public class WeakReferenceDemo {
 		String str = new String("Java");
 		WeakReference<String> weakReference = new WeakReference<>(str, referenceQueue);
 		str = null; //
-		System.gc(); // 通知JVM来进行垃圾回收，回收刚刚的new ReferenceQueue<>()，此时弱引用weakReference被加入队列referenceQueue
+		System.gc(); // 通知JVM来进行垃圾回收，回收刚刚的String对象，此时弱引用weakReference被加入队列referenceQueue
 		
-		System.out.println(weakReference.get()); // new ReferenceQueue<>()被回收，weakReference.get()返回null
+		System.out.println(weakReference.get()); // String对象被回收，weakReference.get()返回null
 
 		Reference<? extends String> reference = referenceQueue.poll();
 		System.out.println(reference); // 返回队列中的WeakReference对象
