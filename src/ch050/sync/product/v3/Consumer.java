@@ -1,4 +1,4 @@
-package ch050.sync.product.v2;
+package ch050.sync.product.v3;
 
 /**
  * 演示同步锁
@@ -19,10 +19,14 @@ public class Consumer extends Thread {
 	@Override
 	public void run() {
 		String goods;
-		for (int i = 0; i < 200; i++) {
+		for (int i = 0; i < 100; i++) {
 			goods = stack.pop();
 			System.out.println(getName() + " : pop " + goods + " from " + stack.getName() + "...");
-			yield();
+			try {
+				sleep(200);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
 		}
 	}
 }
