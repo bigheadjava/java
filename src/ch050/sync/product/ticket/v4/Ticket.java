@@ -6,15 +6,15 @@ package ch050.sync.product.ticket.v4;
  * @author 程序猿大头
  *
  */
-public class Ticket implements Runnable{
+public class Ticket implements Runnable {
 
-	private static int count = 50;
+	private static int count = 50; 
 
 	@Override
 	public void run() {
 		for (int i = 0; i < 50; i++) {
 			sellTicket();
-			
+
 			try {
 				Thread.sleep(200); // 卖完一张票让当前窗口线程休息下，给别的窗口线程卖票机会
 			} catch (InterruptedException e) {
