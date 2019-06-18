@@ -9,7 +9,7 @@ package ch050.sync.product.v1;
  */
 public class Stack {
 	private String name;
-	private String[] buffer = new String[100]; // 缓冲数组
+	private String[] buffer = new String[10]; // 缓冲数组
 	private int point = -1; // 模拟一个指针
 
 	public Stack() {
