@@ -1,7 +1,7 @@
 package ch050.sync.product.v1;
 
 /**
- * 模拟生产者消费者
+ * 模拟生产者消费者, 破坏原子操作
  * 
  * @author 程序猿大头
  * 

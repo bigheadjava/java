@@ -1,7 +1,7 @@
 package ch050.sync.product.v1;
 
 /**
- * 模拟生产者消费者
+ * 模拟生产者消费者, 破坏原子操作
  * 
  * @author 程序猿大头
  * 
@@ -36,7 +36,11 @@ public class Stack {
 	public String pop() {
 		String goods = buffer[point];
 		buffer[point] = null;
-		Thread.yield();
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		point--;
 		return goods;
 	}
@@ -48,7 +52,11 @@ public class Stack {
 	 */
 	public void push(String goods) {
 		point++;
-		Thread.yield();
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 		buffer[point] = goods;
 	}
 }
