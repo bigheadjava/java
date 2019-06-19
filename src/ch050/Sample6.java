@@ -22,7 +22,7 @@ public class Sample6 extends Thread {
 	public void run() {
 		while (true) {
 			synchronized (this) {
-				while (a > 3) {
+				if (a > 3) {
 					 Thread thread = currentThread();
 					timer.schedule(new TimerTask() {
 						@Override
