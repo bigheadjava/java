@@ -17,6 +17,7 @@ public class FileInputStreamDemo1 {
 		while((data = fis.read()) != -1) {
 			System.out.print(data + " ");
 		}
+		fis.close();
 	}
 
 }
