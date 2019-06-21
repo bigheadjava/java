@@ -1,7 +1,7 @@
 package ch050.exercise.bank;
 
 /**
- * 多线程作业
+ * 多线程作业 
  * 
  * @author 程序猿大头
  *
