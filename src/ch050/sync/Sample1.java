@@ -1,14 +1,14 @@
 package ch050.sync;
 
 /**
- * 演示同步锁
+ * 演示多个线程破坏原子操作
  * 
  * @author 程序猿大头
  *
  */
 public class Sample1 extends Thread {
 
-	private int a = 1;
+	private static int a = 1;
 
 	@Override
 	public void run() {
@@ -20,7 +20,7 @@ public class Sample1 extends Thread {
 				e.printStackTrace();
 			}
 			a -= i;
-			System.out.println(currentThread().getName() + " : " + i);
+			System.out.println(currentThread().getName() + " : " + a);
 		}
 	}
 

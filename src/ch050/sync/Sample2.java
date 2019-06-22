@@ -8,7 +8,7 @@ package ch050.sync;
  */
 public class Sample2 extends Thread {
 
-	private int a = 1;
+	private static int a = 1;
 
 	@Override
 	public void run() {
@@ -20,7 +20,7 @@ public class Sample2 extends Thread {
 				e.printStackTrace();
 			}
 			a -= i;
-			System.out.println(currentThread().getName() + " : " + i);
+			System.out.println(currentThread().getName() + " : " + a);
 		}
 	}
 
