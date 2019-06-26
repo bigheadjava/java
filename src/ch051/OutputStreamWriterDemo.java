@@ -14,7 +14,7 @@ import java.io.OutputStreamWriter;
 public class OutputStreamWriterDemo {
 
 	public static void main(String[] args) throws IOException {
-		OutputStream os = new FileOutputStream("/Users/resource/codes/java/src/ch051/files/out/file5.tx");
+		OutputStream os = new FileOutputStream("/Users/resource/codes/java/src/ch051/files/out/file5.txt");
 		OutputStreamWriter osw = new OutputStreamWriter(os, "UTF-8");
 		for(int i = 0; i < 100; i++) {
 			osw.write('我');
