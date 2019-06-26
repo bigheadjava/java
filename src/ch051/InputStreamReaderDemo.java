@@ -15,7 +15,7 @@ public class InputStreamReaderDemo {
 
 	public static void main(String[] args) throws IOException {
 		InputStream is = new FileInputStream("/Users/resource/codes/java/src/ch051/files/out/file2.txt");
-		InputStreamReader reader = new InputStreamReader(is);
+		InputStreamReader reader = new InputStreamReader(is, "UTF-8");
 		int data;
 		while((data = reader.read())!= -1) {
 			System.out.print((char)data);
