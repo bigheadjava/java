@@ -9,7 +9,7 @@ public class LogDemo {
 			demo.log.logInfo("中华人民共和国万岁！");
 		}
 		
-		for(int i=0; i< 500; i++) {
+		for(int i=0; i< 100; i++) {
 			demo.log.logError("中华人民共和国万岁！");
 		}
 
