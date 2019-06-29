@@ -19,7 +19,7 @@ public class FileInputStreamDemo2 {
 		byte[] buffer = new byte[SIZE]; //缓冲区
 		int data = fis.read(buffer); //从文件中读数据进缓冲区
 		while(data != -1) {
-			out.write(buffer);
+			out.write(buffer,0,data);
 			data = fis.read(buffer);
 		}
 		fis.close();
