@@ -21,3 +21,22 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+*.txt
+.settings/org.eclipse.core.resources.prefs
+bin/ch008/allclasses-frame.html
+bin/ch008/allclasses-noframe.html
+bin/ch008/ch008/JavaDocSample.html
+bin/ch008/ch008/package-frame.html
+bin/ch008/ch008/package-summary.html
+bin/ch008/ch008/package-tree.html
+bin/ch008/constant-values.html
+bin/ch008/deprecated-list.html
+bin/ch008/help-doc.html
+bin/ch008/index-all.html
+bin/ch008/index.html
+bin/ch008/overview-tree.html
+bin/ch008/package-list
+bin/ch008/script.js
+bin/ch008/stylesheet.css
+bin/ch051/files/out/person.obj
+src/ch051/files/out/person.obj
